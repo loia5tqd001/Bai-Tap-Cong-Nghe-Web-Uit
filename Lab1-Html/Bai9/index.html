@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Lab1-Html Bài 9</title>
+</head>
+<body>
+  <form>
+    <h1>ĐĂNG KÝ THÔNG TIN VIỆC LÀM</h1>
+
+    <h3>Thông tin cá nhân</h3>
+    <label for="name">Họ & Tên</label>
+    <input type="text" id="name"> <br>
+    <label for="birthday">Ngày tháng năm sinh</label>
+    <input type="text" id="birthday"> <br>
+    <label for="gender">Giới tính</label>
+    <select id="gender">
+      <option value="male">Nam</option>
+      <option value="female">Nữ</option>
+      <option value="others">Khác</option>
+    </select> <br>
+    <label for="relationship">Tình trạng hôn nhân</label>
+    <select id="relationship">
+      <option value="alone">Độc thân</option>
+      <option value="married">Đã kết hôn</option>
+    </select>
+
+    <h3>Thông tin liên lạc</h3>
+    <label for="address">Địa chỉ</label>
+    <input type="text" id="address"> <br>
+    <label for="city">Tỉnh/Thành phố</label>
+    <input type="text" id="city"> <br>
+    <label for="phone">Số điện thoại</label>
+    <input type="text" id="phone"> <br>
+    <label for="mobile">Số điện thoại di động</label>
+    <input type="text" id="mobile"> <br>
+    <label for="email">Email</label>
+    <input type="email" id="email"> <br>
+    
+    <h3>Trình độ học vấn</h3>
+    <label for="academic-level">Trình độ học vấn</label>
+    <select id="academic-level">
+      <option value="pick">Chọn</option>
+    </select> <br>
+    <label for="academic-info">Thông tin về học vấn</label>
+    <textarea id="academic-info" cols="30" rows="3"></textarea> <br>
+    <label for="language">Ngoại ngữ</label>
+    <textarea id="language" cols="30" rows="3"></textarea> <br>
+    <label for="skills">Kỹ năng</label>
+    <textarea id="skills" cols="30" rows="3"></textarea>
+    
+    <h3>Kinh nghiệm làm việc</h3>
+    <label for="exp-years">Số năm kinh nghiệm</label>
+    <input type="text" id="exp-years"> <br>
+    <label for="exp-details">Kinh nghiệm làm việc</label>
+    <textarea id="exp-details" cols="30" rows="3"></textarea>
+    
+    <h3>Mong muốn của bản thân</h3>
+    <label for="job-expected">Việc làm mong muốn</label>
+    <textarea id="job-expected" cols="30" rows="3"></textarea> <br>
+    <label for="salary-expected">Mức lương thỏa thuận</label>
+    <input type="text" id="salary-expected"> <label>VNĐ</label> <br>
+
+    <div>
+      <button type="submit">Gửi hồ sơ</button>
+      <button type="reset">Xóa form</button>
+    </div>
+  </form>
+  <a class="btn --return" href="../index.html">RETURN</a>
+</body>
+</html>

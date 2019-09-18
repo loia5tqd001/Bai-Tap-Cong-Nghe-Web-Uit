@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab1-Html Bài 6 - Mẫu 3</title>
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <style>
+    /* Common */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 4rem auto;
+      max-width: 60rem;
+      color: #333;
+      background: #000;
+      padding: .5px;
+    }
+    .wrapper header {
+      grid-column: span 2;
+      background: #eee;
+    }
+    .wrapper main,
+    .wrapper aside {
+      padding: 2rem 2rem 0 2rem;
+    }
+    .wrapper > * {
+      border: 1px solid black;
+    }
+    .wrapper p::first-letter {
+      color: blue;
+      font-weight: bold;
+    }
+    /* Main */
+    main {
+      background: #fff;
+    }
+    main img {
+      border: 1.5px solid #666; 
+      display: block;
+      margin: auto;
+    }
+    main h2,
+    main h3 {
+      text-align: center;
+    }
+    main h3 {
+      color: red;
+      font-weight: 200;
+    }
+    /* Side */
+    aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #c0c0c0;
+    }
+    aside p {
+      text-align: center;
+    }
+    aside a {
+      margin: 3rem 0;
+      color: rebeccapurple;
+      text-transform: lowercase;
+    }
+    aside a::first-letter {
+      color: blue;
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <div class="wrapper">
+
+    <!-- Header -->
+    <header>Header Content Header</header>
+
+    <!-- Left column -->
+    <main>
+      <h2>Two Column Flexible With Header</h2>
+
+      <h3>Ver 2.3</h3>
+
+      <p>This is the same as the 2 Column Flexible but with the addition of a header div for top navigation or banner.</p>
+
+      <p>The left column uses float left and has a percentage width allowing both columns to 'flow' as the browser window changes shape.</p>
+
+      <p> This template has been tested in: 
+        <ul type="disc">
+          <li>Mozilla 1.5b & Firefox 0.8</li>
+          <li>Internet Explorer 6</li>
+          <li>Netscape 7.1</li>
+          <li>Opera 7.11</li>
+        </ul>
+      </p>
+    </main>
+
+    <!-- Right column -->
+    <aside>
+      <h3>Right Column</h3>
+      <p>The right column can be used for navigation links, search box etc.</p>
+      <a href="#">View more templates.</a>
+    </aside>
+
+  </div>
+
+  <a class="btn --return" href="../index.html">RETURN</a>
+
+</body>
+</html>

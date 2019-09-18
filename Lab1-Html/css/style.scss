@@ -1,0 +1,31 @@
+.btn {
+  font-family: sans-serif;
+  text-decoration: none;
+  
+  &.--navigate {
+    display: block;
+    color: green;
+    box-shadow: 1px 2px 8px rgba(#333, .5);
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  &.--return {
+    $size: 16px;
+    
+    position: fixed;
+    right: $size*2;
+    bottom: $size*2;
+    font-size: $size;
+    padding: $size*.5 $size;
+    color: white; 
+    box-shadow: 1px 2px 8px rgba(black, .7);
+    background: #000;
+    &::first-letter {
+      color: blue;
+      font-weight: bold;
+    }
+  }
+}
+
+

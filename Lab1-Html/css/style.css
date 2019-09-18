@@ -1,0 +1,31 @@
+.btn {
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.btn.--navigate {
+  display: block;
+  color: green;
+  -webkit-box-shadow: 1px 2px 8px rgba(51, 51, 51, 0.5);
+          box-shadow: 1px 2px 8px rgba(51, 51, 51, 0.5);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.btn.--return {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  font-size: 16px;
+  padding: 8px 16px;
+  color: white;
+  -webkit-box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.7);
+          box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.7);
+  background: #000;
+}
+
+.btn.--return::first-letter {
+  color: blue;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab1-Html Bài 6 - Mẫu 2</title>
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <style>
+    /* Common */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #555;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: 12rem 1fr;
+      grid-gap: 1rem;
+      padding: 1rem;
+      color: #333;
+      max-width: 60rem;
+    }
+    .wrapper > div {
+      border: 2px solid black;
+    }
+    .wrapper p::first-letter,
+    .wrapper a::first-letter {
+      color: blue;
+      font-weight: bold;
+    }
+    /* Main */
+    .main {
+      padding: 2rem;
+      background: #fff;
+    }
+    .main img {
+      border: 1.5px solid #666; 
+      display: block;
+      margin: auto;
+    }
+    .main h2,
+    .main h3 {
+      text-align: center;
+    }
+    .main h3 {
+      color: red;
+      font-weight: 200;
+    }
+    /* Side */
+    .side {
+      height: 25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #c0c0c0;
+    }
+    .side p {
+      text-align: center;
+    }
+    .side a {
+      margin: 3rem 0;
+      text-transform: lowercase;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <div class="wrapper">
+    <!-- Left column -->
+    <div class="side">
+      <h3>Left Column</h3>
+      <p>The right column can be used for navigation links, search box etc.</p>
+      <a href="#">View more templates.</a>
+    </div>
+
+    <!-- Right column -->
+    <div class="main">
+      <img src="../logo.png" width="200">
+
+      <h2>Two Column - Left Column Static</h2>
+
+      <h3>Ver 2.3</h3>
+
+      <p>The left column is absolutely positioned and is a fixed width. It won't move.</p>
+
+      <p>The content column, which you are reading from, is flexible. It will automatically change shape width can be controlled by setting approriate margins or an actual width can be spicified if required</p>
+
+      <p> This template has been tested in: 
+        <ul type="disc">
+          <li>Mozilla 1.5b & Firefox 0.8</li>
+          <li>Internet Explorer 6</li>
+          <li>Netscape 7.1</li>
+          <li>Opera 7.11</li>
+        </ul>
+      </p>
+
+      <p> changes in this version:
+        <ol>
+          <li>Defined zero padding for the body to fix a problem in Opera. </li>
+        </ol>
+      </p>
+    </div>
+
+  <a class="btn --return" href="../index.html">RETURN</a>
+
+</body>
+</html>

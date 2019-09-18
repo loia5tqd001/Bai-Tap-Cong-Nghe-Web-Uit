@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab1-Html Bài 4 - Mẫu 3</title>
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <style>
+    /* Style for table */
+    .table {
+      height: 70vh;
+      width: 50vw;
+      min-width: 35rem;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 1rem;
+      padding: 1rem;
+      border: .5rem solid black;
+      font-size: 1.3rem;
+    }
+    /* Common style for all cells */
+    .table > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      border: 1.5px solid black;
+    }
+    /* Style for each specific cell */
+    .table > div.header {
+      background: #00f;
+      font-weight: bold;
+      vertical-align: center;
+    }
+    .table > div:nth-child(4) {
+      align-items: flex-start;
+    }
+    .table > div:nth-child(6) {
+      align-items: flex-end;
+    }
+    .table > div:last-child {
+      grid-column: span 2;
+      background: #ff0;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="table">
+  	<div class="header">Header 1</div>
+  	<div class="header">Header 2</div>
+  	<div class="header">Header 3</div>
+  	<div>Row 1,Col 1</div>
+  	<div>Row 1,Col 2</div>
+  	<div>Row 1,Col 3</div>
+  	<div>Row 2,Col 1</div>
+  	<div>Row 2,Cell 2</div>
+  </div>
+
+  <a class="btn --return" href="../index.html">RETURN</a>
+
+</body>
+</html>

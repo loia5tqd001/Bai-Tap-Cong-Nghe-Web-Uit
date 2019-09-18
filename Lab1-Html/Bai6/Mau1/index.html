@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab1-Html Bài 6 - Mẫu 1</title>
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .wrapper {
+      display: grid;
+      color: #333;
+      grid-template-columns: 2fr 1fr;
+      max-width: 70rem;
+    }
+    .wrapper > div {
+      border: 1px solid black;
+      padding: 2rem;
+    }
+    .wrapper p::first-letter {
+      color: blue;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .main h2,
+    .main h3 {
+      text-align: center;
+    }
+    .main h3 {
+      color: red;
+      font-weight: 200;
+    }
+    .side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #c0c0c0;
+    }
+    .side img {
+      border: 1.5px solid #666; 
+    }
+    .side p {
+      text-align: justify;
+    }
+    .side a {
+      margin: 3rem 0;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <div class="wrapper">
+    <!-- Left column -->
+    <div class="main">
+      <h2>Two Column Flexible</h2>
+      <h3>Ver 2.3</h3>
+      <p>This is a very easy page layout which you have probably seen on sites such as ALA (A List Apart). Each column is created with simply two div tags. </p>
+      <p>The left column uses float left and has a percentage width allowing both columns to 'flow' as the browser window changes shape. </p>
+      <p> This template has been tested in: 
+        <ul type="disc">
+          <li>Mozilla 1.5b & Firefox 0.8</li>
+          <li>Internet Explorer 6</li>
+          <li>Netscape 7.1</li>
+          <li>Opera 7.11</li>
+        </ul>
+      </p>
+      <p> changes in this version:
+        <ol>
+          <li>Defined zero padding for the body to fix a problem in Opera. </li>
+        </ol>
+      </p>
+    </div>
+
+    <!-- Right column-->
+    <div class="side">
+      <img src="../logo.png" width="200">
+      <p>The right column can be used for navigation links, search box etc.</p>
+      <a href="#">View more templates</a>
+    </div>
+  </div>
+
+  <a class="btn --return" href="../index.html">RETURN</a>
+
+</body>
+</html>
