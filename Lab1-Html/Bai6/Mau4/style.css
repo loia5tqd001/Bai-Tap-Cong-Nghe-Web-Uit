@@ -5,13 +5,12 @@ body {
   margin: 2px 3px;
   min-height: 99vh;
   display: grid;
-  grid-template-areas: 
-  'header'
-  'nav'
-  'aside'
-  'main'
-  'footer';
-  grid-template-rows: auto auto auto 1fr auto;
+  grid-template: 
+  'header' auto
+  'nav' auto
+  'aside' auto
+  'main' 1fr
+  'footer' auto;
   grid-gap: 2px;
 }
 body > * {
@@ -81,12 +80,11 @@ footer {
 /* Media */
 @media (min-width: 768px) {
   body {
-    grid-template-areas: 
-    'header header'
-    'nav nav'
-    'aside main'
-    'footer footer';
-    grid-template-rows: auto auto 1fr auto;
+    grid-template: 
+    'header header' auto
+    'nav nav' auto
+    'aside main' 1fr
+    'footer footer' auto;
   }
   aside {
     display: block;

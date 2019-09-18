@@ -9,6 +9,10 @@ input, textarea, select {
   margin: .3rem;
   padding: .2rem;
 }
+label.required:before {
+  content: '* ';
+  color: red;
+}
 
 /* Form styles */
 form {

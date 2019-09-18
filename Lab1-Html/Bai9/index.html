@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/common-button.css">
   <link rel="stylesheet" href="./style.css">
   <title>Lab1-Html Bài 9</title>
 </head>
@@ -13,10 +13,10 @@
     <h1>ĐĂNG KÝ THÔNG TIN VIỆC LÀM</h1>
 
     <h3>Thông tin cá nhân</h3>
-    <label for="name">Họ & Tên</label>
-    <input type="text" id="name"> <br>
-    <label for="birthday">Ngày tháng năm sinh</label>
-    <input type="text" id="birthday"> <br>
+    <label class="required" for="name">Họ & Tên</label>
+    <input type="text" id="name" required> <br>
+    <label class="required" for="birthday">Ngày tháng năm sinh</label>
+    <input type="datetime" id="birthday" required> <br>
     <label for="gender">Giới tính</label>
     <select id="gender">
       <option value="male">Nam</option>
@@ -30,24 +30,24 @@
     </select>
 
     <h3>Thông tin liên lạc</h3>
-    <label for="address">Địa chỉ</label>
-    <input type="text" id="address"> <br>
-    <label for="city">Tỉnh/Thành phố</label>
-    <input type="text" id="city"> <br>
+    <label class="required" for="address">Địa chỉ</label>
+    <input type="text" id="address" required> <br>
+    <label class="required" for="city">Tỉnh/Thành phố</label>
+    <input type="text" id="city" required> <br>
     <label for="phone">Số điện thoại</label>
     <input type="text" id="phone"> <br>
     <label for="mobile">Số điện thoại di động</label>
     <input type="text" id="mobile"> <br>
-    <label for="email">Email</label>
-    <input type="email" id="email"> <br>
+    <label class="required" for="email">Email</label>
+    <input type="email" id="email" required> <br>
     
     <h3>Trình độ học vấn</h3>
-    <label for="academic-level">Trình độ học vấn</label>
-    <select id="academic-level">
+    <label class="required" for="academic-level">Trình độ học vấn</label>
+    <select id="academic-level" required>
       <option value="pick">Chọn</option>
     </select> <br>
-    <label for="academic-info">Thông tin về học vấn</label>
-    <textarea id="academic-info" cols="30" rows="3"></textarea> <br>
+    <label class="required" for="academic-info">Thông tin về học vấn</label>
+    <textarea id="academic-info" cols="30" rows="3" required></textarea> <br>
     <label for="language">Ngoại ngữ</label>
     <textarea id="language" cols="30" rows="3"></textarea> <br>
     <label for="skills">Kỹ năng</label>
@@ -62,8 +62,8 @@
     <h3>Mong muốn của bản thân</h3>
     <label for="job-expected">Việc làm mong muốn</label>
     <textarea id="job-expected" cols="30" rows="3"></textarea> <br>
-    <label for="salary-expected">Mức lương thỏa thuận</label>
-    <input type="text" id="salary-expected"> <label>VNĐ</label> <br>
+    <label class="required" for="salary-expected">Mức lương thỏa thuận</label>
+    <input type="text" id="salary-expected" required> <label>VNĐ</label> <br>
 
     <div>
       <button type="submit">Gửi hồ sơ</button>
