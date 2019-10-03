@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background: #facfcf;
+      display: grid;
+      place-items: center;
+      font-family: sans-serif;
+    }
+    .container {
+      display: grid;
+      width: 960px;
+      min-height: 460px;
+      grid-template-columns: 204px 1fr;
+      grid-template-rows: 70px 30px 1fr 100px;
+      grid-template-areas: 
+        'title title'
+        'menu menu'
+        'left right'
+        'footer footer';
+        border: 1px solid green;
+    }
+    .title {
+      grid-area: title;
+      display: flex;
+      align-items: center;
+      border: 1px solid red;
+    }
+    .title span {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    .title span:first-child {
+      color: white;
+    }
+    .menu {
+      grid-area: menu;
+      background: #420000;
+      color: white;
+    }
+    .left {
+      grid-area: left;
+      border: 1px solid gray;
+    }
+    .right {
+      grid-area: right;
+      border: 1px solid brown;
+    }
+    footer {
+      grid-area: footer;
+      color: #420000;
+    }
+  </style>
+  <link rel="stylesheet" href="../../Lab1-Html/css/common-button.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="title"><span>Slick</span><span>Red</span></div>
+    <div class="menu">MENU</div>
+    <aside class="left">LEFT</aside>
+    <main class="right">RIGHT</main>
+    <footer>FOOTER</footer>
+  </div>
+
+  <a class="btn --return" href="../index.html">RETURN</a>
+
+</body>
+</html>

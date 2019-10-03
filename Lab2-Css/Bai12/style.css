@@ -1,0 +1,52 @@
+/* Common styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+}
+input, textarea, select {
+  border: 1px solid green;
+  background: #fff;
+  margin: .3rem;
+  padding: .2rem;
+}
+label.required:before {
+  content: '* ';
+  color: red;
+}
+
+/* Form styles */
+form {
+  display: grid;
+  grid-template-columns: minmax(11rem, 1fr) 5fr auto;
+}
+form h1 {
+  text-align: center;
+  grid-column: span 3;
+}
+form h3 {
+  grid-column: span 3;
+  background: green;
+  color: #ccc;
+  padding: .1rem .5rem;
+  margin: 2rem 0 1rem;
+}
+
+form label[for] {
+  grid-column: 1/2;
+  margin: auto 0;
+  text-align: right;
+}
+form label[for]:after {
+  content: ' :';
+}
+form label:not([for]) {
+  grid-column: 3/4;
+  margin: auto 0;
+}
+
+form div:has(button) {
+  grid-column: 2/4;
+}
+form div button {
+  margin: .3rem;
+}
