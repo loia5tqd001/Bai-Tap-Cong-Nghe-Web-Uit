@@ -1,8 +1,12 @@
+<meta charset="UTF-8">
 <script>
   const currentYear = new Date().getFullYear()
   let yearOfBirth = Infinity
 
-  const isNotSatisfied = () => yearOfBirth > currentYear
+  const isNotSatisfied = () => 
+    yearOfBirth.trim() === '' 
+  || isNaN(yearOfBirth) 
+  || yearOfBirth > currentYear
 
   do {
     yearOfBirth = prompt("Nhập vào năm sinh hiện tại")
