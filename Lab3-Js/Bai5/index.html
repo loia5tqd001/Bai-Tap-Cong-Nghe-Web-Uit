@@ -1,0 +1,28 @@
+<head>
+  <title>Máy tính đơn giản</title>
+</head>
+<body>
+  <form>
+    <input type="number" size="4" value="12" id="a">
+    <input type="button" value="+" onclick="a_plus_b(this.form)">
+    <input type="button" value="-" onclick="a_minus_b(this.form)">
+    <input type="button" value="*" onclick="a_times_b(this.form)">
+    <input type="button" value="/" onclick="a_div_b(this.form)">
+    <input type="button" value="^" onclick="a_pow_b(this.form)">
+    <input type="number" size="4" value="3" id="b">
+    =
+    <input type="number" size="9" value="0" id="ans"">
+  </form>
+
+  <script>
+    const a = document.getElementById("a")
+    const b = document.getElementById("b")
+    const ans = document.getElementById("ans")
+
+    const a_plus_b  = () => ans.value = Number(a.value) +  Number(b.value)
+    const a_minus_b = () => ans.value = Number(a.value) -  Number(b.value)
+    const a_times_b = () => ans.value = Number(a.value) *  Number(b.value)
+    const a_div_b   = () => ans.value = Number(a.value) /  Number(b.value)
+    const a_pow_b   = () => ans.value = Number(a.value) ** Number(b.value)
+  </script>
+</body>

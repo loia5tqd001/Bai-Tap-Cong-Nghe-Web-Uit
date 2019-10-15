@@ -1,0 +1,46 @@
+<head>
+  <style>
+    body {
+      display: grid;
+      place-items: center;
+    }
+
+    #my-form {
+      border: 1px solid black;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 1fr);
+      grid-gap: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome DungTA</h1>
+  <form id="my-form" name="form">
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username" required> <br>
+
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password" required> <br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    document.forms.form.addEventListener("submit", validateForm)
+
+    function validateForm (ev) {
+      const username = ev.target.username.value
+      const password = ev.target.password.value
+
+      if (username === "dungta" && password === "123456") {
+        alert("Xin chào bạn đến với website")
+      }
+      else {
+        ev.preventDefault() // prevent the page from reloading
+        alert("Thông tin đăng nhập không đúng")
+      }
+    }
+  </script>
+</body>

@@ -1,0 +1,16 @@
+<script>
+  const currentYear = new Date().getFullYear()
+  let yearOfBirth = Infinity
+
+  const isNotSatisfied = () => yearOfBirth > currentYear
+
+  do {
+    yearOfBirth = prompt("Nhập vào năm sinh hiện tại")
+
+    alert( isNotSatisfied() 
+    ? "Năm sinh nhập vào không hợp lệ"
+    : `Tuổi của bạn là: ${currentYear - yearOfBirth}` )
+  }
+  while (isNotSatisfied()) 
+
+</script>

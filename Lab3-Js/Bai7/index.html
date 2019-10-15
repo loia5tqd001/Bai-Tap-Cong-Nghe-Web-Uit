@@ -1,0 +1,25 @@
+<script>
+  const isInteger = (str) => /^\d+$/.test(str)
+  const isPrime = (num) => {
+    for (let i = 2, end = Math.sqrt(num); i <= end; i++)
+      if (num % i === 0) return false;
+    return num > 1;
+  }
+
+  do {
+    var input = prompt("Nhập vào một số nguyên")
+
+    if (!isInteger(input)) {
+      alert("Vui lòng hợp tác nhập vào một số nguyên hợp lệ!!")
+    }
+    else {
+      input = Number(input)
+
+      alert( isPrime(input)
+      ? `Số vừa nhập (${input}) là một số nguyên tố`
+      : `Số vừa nhập (${input}) không phải là một số nguyên tố`)
+    }
+  }
+  while (!isInteger(input))
+
+</script>
